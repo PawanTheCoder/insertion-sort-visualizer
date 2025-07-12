@@ -1,0 +1,189 @@
+* {
+    margin : 0;
+    padding : 0;
+    box-sizing : border-box;
+}
+:root {
+    --COLOR : white;
+    --BGCOLOR : black;
+    --BGCOLOR2 : #333;
+}
+header {
+    background-color : var(--BGCOLOR2);
+    color : var(--COLOR);
+    display : flex;
+    justify-content: space-between;
+    height : 70px;
+    align-items: center;
+    padding-right : 15px;
+    padding-left : 15px;
+    transition : 0.2s ease-in-out;
+}
+main { 
+    display : flex;  
+}
+aside {
+    width : 20vw;
+    background-color : var(--BGCOLOR2);
+    height : 100vh;
+    border-radius : 10px;
+    display : none;
+}
+ul{
+    display : flex;
+    flex-direction : column;
+    gap : 3rem; 
+    padding-top : 80px;
+}
+a {
+    color : var(--COlOR);
+    text-decoration : none;
+    font-weight : bold;
+    font-size : 1.3rem;
+}
+a:hover {
+    color : yellow;
+}
+a {
+    padding : 5px 10px;
+    box-shadow : 0 0 10px rgb(17, 227, 199);
+    border-radius : 30px;
+
+}
+li:hover {
+    transform : scale(1.1);
+    transition : 0.3s ease-in-out;
+    
+}
+#main {
+    display : flex;
+    flex-direction : column;
+    padding-top : 30px;
+    align-items: center;
+    width : 100%;
+    gap : 1rem;
+}
+#menu {
+    display : flex;
+    flex-direction : column;
+    gap : 5px;
+   
+}
+#menu span{
+    width : 37px;
+    height : 5px;
+    background-color: var(--COLOR);
+    border-radius : 40px;
+}
+#menu:hover {
+    cursor : pointer;
+}
+
+#theme {
+    background : radial-gradient(lightblue,cyan);
+    color : var(--BGCOLOR);
+    padding : 5px 10px;
+    border : 2px solid var(--COLOR);
+    border-radius : 30px;
+}
+#theme:hover {
+    box-shadow : 0 0 10px blue;
+    cursor : pointer;
+    transform : scale(1.05);
+    transition : 0.2s ease-in-out;
+    font-weight : bold;
+}
+body {
+    font-size : 1.3rem;
+    display : flex;
+    flex-direction : column;
+    flex-wrap : wrap;
+    gap : 1rem;
+    background-color: var(--BGCOLOR);
+    text-align: center;
+    color : var(--COLOR);
+}
+input {
+    width : 100px;
+    background-color : var(--BGCOLOR);
+    color : var(--COLOR);
+    border : 2px solid var(--COLOR);
+    border-radius : 30px;
+    text-align: center;
+    height : 25px;
+}
+button {
+    align-self: center;
+    padding : 10px;
+    border : 2px solid var(--COLOR);
+    background-color : lime;
+    border-radius : 30px;
+    font-weight : bold;
+}
+button:hover {
+    cursor : pointer;
+    transform : scale(1.1);
+    transition : 0.2s ease-in-out;
+}
+
+/* JavaScript ClassLists stylings */
+.first {
+    transform : rotate(45deg) translate(10px);
+    transition: 0.3s ease-in-out;
+}
+.third {
+    transform : rotate(-45deg) translate(10px);
+    transition: 0.3s ease-in-out;
+}
+.display {
+    display : block;
+    transition: 0.3s ease-in-out;
+}
+.display2 {
+    display : none;
+}
+.array-input {
+    width : 50px;
+    height : 30px;
+    display : flex;
+    flex-wrap : wrap;
+    font-size: 16px;
+    text-align: center;
+    font-weight : bold;
+    border: 2px solid var(--COLOR);
+    border-radius: 5px;
+    color: black;
+}
+.rows {
+    display : flex;
+}
+#input-container {
+    display : flex;
+    flex-direction : row;
+    align-items: center;
+}
+#arrays {
+    display : flex;
+}
+.submit-array {
+    padding : 5px 10px;
+    background-color : lime;
+    border : 2px solid var(--COLOR);
+    border-radius : 20px;
+    margin-top : 20px;
+}
+
+.reset-button {
+    padding: 5px 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+.reset-button:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+    cursor: pointer;
+}
